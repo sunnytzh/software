@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>python模块xlrd安装-处理excel文件必须 - sincoolvip - 博客园</title>
+<link type="text/css" rel="stylesheet" href="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/bundle-SimpleMemory.css">
+<link type="text/css" rel="stylesheet" href="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/220919.css">
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/bundle-SimpleMemory-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/sincoolvip/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/sincoolvip/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/sincoolvip/wlwmanifest.xml">
+<script async="" src="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/analytics.js"></script><script src="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/jquery-2.js"></script>
+<script type="text/javascript">var currentBlogApp = 'sincoolvip', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/blog-common.js" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+<!--PageBeginHtml Block Begin-->
+<link type="text/css" rel="stylesheet" href="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/shCore.css">
+<!--PageBeginHtml Block End-->
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/sincoolvip/"><img id="blogLogo" src="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/sincoolvip/">sincoolvip</a></h1>
+<h2>一切的努力都是有意义的</h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li></li>
+<li><a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/sincoolvip/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li></li>
+<li>
+<!----></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/sincoolvip/p/5967010.html">python模块xlrd安装-处理excel文件必须</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body"><p>我安装了很久，网上查了很多资料，但都不太适合，综合 了一下，再写一写，希望有用。。。</p>
+<p>官网下载xlrd:<a href="https://pypi.python.org/pypi/xlrd">官网xlrd下载地址，</a></p>
+<p>真的很难下，我用讯雷，有时候断断续续</p>
+<p>下面是我的百度网盘地址，分享出来，不用谢：</p>
+<p><a href="http://pan.baidu.com/s/1c3iaU6">我的网盘下载地址</a></p>
+<p style="font-size: 20px; color: #d51938">下载后安装也是大事，这里请注意一下</p>
+<p>&nbsp;cmd命令检查：要加环境变量哦，不然这里打不开来的</p>
+<p><img src="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/738385-20161016160916108-617036202.png" alt=""></p>
+<p>安装xlrd:</p>
+<p>下载xlrd后，解压，CMD命令切到xlrd目录下：</p>
+<p><img src="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/738385-20161016161144967-1714812495.png" alt=""></p>
+<p>安装：</p>
+<p><img src="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/738385-20161016161243780-938702855.png" alt=""></p>
+<p>OK！！！</p></div><div id="MySignature" style="display: block;">如果您认为阅读这篇博客让您有些收获，不妨点击一下右下角的【推荐】 
+本文版权归作者和博客园共有，欢迎转载</div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/sincoolvip/category/894739.html" target="_blank">python</a></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(5967010,cb_blogId,1);green_channel_success(this,'谢谢推荐！');">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow('fe9f2a48-82d7-e411-b908-9dcfd8948a71');" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/sincoolvip/" target="_blank"><img src="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/20160430201416.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/sincoolvip/">sincoolvip</a><br>
+            <a href="http://home.cnblogs.com/u/sincoolvip/followees">关注 - 6</a><br>
+            <a href="http://home.cnblogs.com/u/sincoolvip/followers">粉丝 - 23</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow('fe9f2a48-82d7-e411-b908-9dcfd8948a71');return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(5967010,'Digg')">
+        <span class="diggnum" id="digg_count">0</span>
+    </div>
+    <div class="buryit" onclick="votePost(5967010,'Bury')">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+<script type="text/javascript">
+    currentDiggType = 0;
+</script></div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/sincoolvip/p/5966696.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/sincoolvip/p/5966696.html" title="发布于2016-10-16 15:09">pycharm安装python模块</a><br><a href="http://www.cnblogs.com/sincoolvip/p/5972715.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/sincoolvip/p/5972715.html" title="发布于2016-10-18 11:44">java连接数据源-读取tomcat数据源配置</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2016-10-16 16:13</span> <a href="http://www.cnblogs.com/sincoolvip/">sincoolvip</a> 阅读(<span id="post_view_count">11552</span>) 评论(<span id="post_comment_count">0</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=5967010" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(5967010);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=220919,cb_entryId=5967010,cb_blogApp=currentBlogApp,cb_blogUserGuid='fe9f2a48-82d7-e411-b908-9dcfd8948a71',cb_entryCreatedDate='2016/10/16 16:13:00';loadViewCount(cb_entryId);var cb_postType=1;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login('commentform');">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】超50万VC++源码: 大型组态工控、电力仿真CAD与GIS源码库！</a><br><a href="http://click.aliyun.com/m/43774/" target="_blank">【缅怀】传奇谢幕，回顾霍金76载传奇人生</a><br><a href="https://cloud.tencent.com/act/campus?fromSource=gwzcw.860539.860539.860539" target="_blank">【推荐】腾讯云校园拼团福利，1核2G服务器10元/月！</a><br><a href="https://www.yunqi2050.com/#/index" target="_blank">【活动】2050 科技公益大会 - 年青人因科技而团聚</a><br></div>
+<div id="opt_under_post"></div>
+<div id="cnblogs_c1" class="c_ad_block"><a href="https://market.qcloud.com/act/wangjian/?fromSource=gwzcw.860541.860541.860541" target="_blank"><img src="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/24442-20180314220122373-1718033865.jpg" alt="qcloud0314" width="300" height="250"></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="https://news.cnblogs.com/n/591837/" target="_blank">机构：Facebook亚马逊将颠覆体育赛事直播</a><br> ·  <a href="https://news.cnblogs.com/n/591836/" target="_blank">软银转让股权 沃尔玛将买下印度最大电商Flipkart</a><br> ·  <a href="https://news.cnblogs.com/n/591823/" target="_blank">为什么蓝洞总打自己脸？</a><br> ·  <a href="https://news.cnblogs.com/n/591831/" target="_blank">国家工商总局升级12315：可用支付宝一键投诉</a><br> ·  <a href="https://news.cnblogs.com/n/591832/" target="_blank">AMD漏洞被公开 Linux之父暴怒：无耻之极！</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="cnblogs_c2" class="c_ad_block"><a href="http://click.aliyun.com/m/42835/" target="_blank"><img src="python%E6%A8%A1%E5%9D%97xlrd%E5%AE%89%E8%A3%85-%E5%A4%84%E7%90%86excel%E6%96%87%E4%BB%B6%E5%BF%85%E9%A1%BB%20-%20sincoolvip%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/TB1mEZFaWmWBuNjy1XaXXXCbXXa-468-60.jpg" alt="阿里云0308" style="display: none !important;" width="468" height="60"></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/575255/" target="_blank">写给自学者的入门指南</a><br> ·  <a href="http://kb.cnblogs.com/page/578690/" target="_blank">和程序员谈恋爱</a><br> ·  <a href="http://kb.cnblogs.com/page/585734/" target="_blank">学会学习</a><br> ·  <a href="http://kb.cnblogs.com/page/588938/" target="_blank">优秀技术人的管理陷阱</a><br> ·  <a href="http://kb.cnblogs.com/page/590141/" target="_blank">作为一个程序员，数学对你到底有多重要</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><div id="profile_block">昵称：<a href="https://home.cnblogs.com/u/sincoolvip/">sincoolvip</a><br>园龄：<a href="https://home.cnblogs.com/u/sincoolvip/" title="入园时间：2015-03-31">2年11个月</a><br>粉丝：<a href="https://home.cnblogs.com/u/sincoolvip/followers/">23</a><br>关注：<a href="https://home.cnblogs.com/u/sincoolvip/followees/">6</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow('fe9f2a48-82d7-e411-b908-9dcfd8948a71')">+加关注</a></div><script>getFollowStatus('fe9f2a48-82d7-e411-b908-9dcfd8948a71')</script></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" title="Calendar" cellpadding="0" cellspacing="0">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar('2018/02/01');return false;">&lt;</a></td><td align="center">2018年3月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar('2018/04/01');return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" abbr="日" scope="col" align="center">日</th><th class="CalDayHeader" abbr="一" scope="col" align="center">一</th><th class="CalDayHeader" abbr="二" scope="col" align="center">二</th><th class="CalDayHeader" abbr="三" scope="col" align="center">三</th><th class="CalDayHeader" abbr="四" scope="col" align="center">四</th><th class="CalDayHeader" abbr="五" scope="col" align="center">五</th><th class="CalDayHeader" abbr="六" scope="col" align="center">六</th></tr><tr><td class="CalOtherMonthDay" align="center">25</td><td class="CalOtherMonthDay" align="center">26</td><td class="CalOtherMonthDay" align="center">27</td><td class="CalOtherMonthDay" align="center">28</td><td align="center">1</td><td align="center"><a href="http://www.cnblogs.com/sincoolvip/archive/2018/03/02.html"><u>2</u></a></td><td class="CalWeekendDay" align="center">3</td></tr><tr><td class="CalWeekendDay" align="center">4</td><td align="center">5</td><td align="center">6</td><td align="center">7</td><td align="center">8</td><td align="center">9</td><td class="CalWeekendDay" align="center">10</td></tr><tr><td class="CalWeekendDay" align="center">11</td><td align="center">12</td><td align="center">13</td><td class="CalTodayDay" align="center">14</td><td align="center">15</td><td align="center">16</td><td class="CalWeekendDay" align="center">17</td></tr><tr><td class="CalWeekendDay" align="center">18</td><td align="center">19</td><td align="center">20</td><td align="center">21</td><td align="center">22</td><td align="center">23</td><td class="CalWeekendDay" align="center">24</td></tr><tr><td class="CalWeekendDay" align="center">25</td><td align="center">26</td><td align="center">27</td><td align="center">28</td><td align="center">29</td><td align="center">30</td><td class="CalWeekendDay" align="center">31</td></tr><tr><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk" type="text">&nbsp;<input onclick="zzk_go()" value="找找看" id="btnZzk" class="btn_my_zzk" type="button"></div>
+
+</div>
+</div>
+
+</div><div id="sidebar_categories">
+<div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+<h3 class="catListTitle">随笔分类</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/sincoolvip/category/888902.html">appium(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/sincoolvip/category/852423.html">CSS(4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/sincoolvip/category/781570.html">excel(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/sincoolvip/category/900228.html">hibernate(14)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/sincoolvip/category/1153001.html">JAVA GUI(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="http://www.cnblogs.com/sincoolvip/category/862369.html">Java 反射机制(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_6" href="http://www.cnblogs.com/sincoolvip/category/866395.html">JavaBean(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_7" href="http://www.cnblogs.com/sincoolvip/category/912283.html">java-Filter(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_8" href="http://www.cnblogs.com/sincoolvip/category/851680.html">JavaScript(5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_9" href="http://www.cnblogs.com/sincoolvip/category/842561.html">Java-Socket(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_10" href="http://www.cnblogs.com/sincoolvip/category/825992.html">Java报错(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_11" href="http://www.cnblogs.com/sincoolvip/category/839054.html">Java常用类(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_12" href="http://www.cnblogs.com/sincoolvip/category/840255.html">Java高级特性-输入流和输出流(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_13" href="http://www.cnblogs.com/sincoolvip/category/822379.html">Java基础-数组(10)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_14" href="http://www.cnblogs.com/sincoolvip/category/678880.html">Java基础-循环控制(4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_15" href="http://www.cnblogs.com/sincoolvip/category/835696.html">Java集合与泛型(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_16" href="http://www.cnblogs.com/sincoolvip/category/828873.html">Java面向对象-类和对象(7)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_17" href="http://www.cnblogs.com/sincoolvip/category/825447.html">Java实例(5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_18" href="http://www.cnblogs.com/sincoolvip/category/896446.html">jdbc(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_19" href="http://www.cnblogs.com/sincoolvip/category/888207.html">JQuery(7)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_20" href="http://www.cnblogs.com/sincoolvip/category/857511.html">Jsp(20)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_21" href="http://www.cnblogs.com/sincoolvip/category/678509.html">loadrunner(5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_22" href="http://www.cnblogs.com/sincoolvip/category/887558.html">Oracle(10)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_23" href="http://www.cnblogs.com/sincoolvip/category/1006489.html">postman简明教程(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_24" href="http://www.cnblogs.com/sincoolvip/category/894739.html">python(14)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_25" href="http://www.cnblogs.com/sincoolvip/category/1162929.html">python_PK_java</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_26" href="http://www.cnblogs.com/sincoolvip/category/1068774.html">selenium(4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_27" href="http://www.cnblogs.com/sincoolvip/category/990254.html">shell脚本编程(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_28" href="http://www.cnblogs.com/sincoolvip/category/673026.html">soapUI(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_29" href="http://www.cnblogs.com/sincoolvip/category/1009287.html">Spring(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_30" href="http://www.cnblogs.com/sincoolvip/category/964348.html">SSH(6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_31" href="http://www.cnblogs.com/sincoolvip/category/911742.html">struts(6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_32" href="http://www.cnblogs.com/sincoolvip/category/843649.html">XML(4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_33" href="http://www.cnblogs.com/sincoolvip/category/781569.html">个人(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_34" href="http://www.cnblogs.com/sincoolvip/category/833332.html">其它工具(8)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_35" href="http://www.cnblogs.com/sincoolvip/category/1106576.html">投票系统知识点(4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_36" href="http://www.cnblogs.com/sincoolvip/category/883664.html">小工具(12)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_37" href="http://www.cnblogs.com/sincoolvip/category/906907.html">小技巧(10)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_38" href="http://www.cnblogs.com/sincoolvip/category/695112.html">移动app测试(13)</a> </li>
+
+</ul>
+
+</div>
+
+<div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
+<h3 class="catListTitle">随笔档案</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_1_Link_0" href="http://www.cnblogs.com/sincoolvip/archive/2018/03.html">2018年3月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_1" href="http://www.cnblogs.com/sincoolvip/archive/2018/02.html">2018年2月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_2" href="http://www.cnblogs.com/sincoolvip/archive/2018/01.html">2018年1月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_3" href="http://www.cnblogs.com/sincoolvip/archive/2017/12.html">2017年12月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_4" href="http://www.cnblogs.com/sincoolvip/archive/2017/11.html">2017年11月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_5" href="http://www.cnblogs.com/sincoolvip/archive/2017/10.html">2017年10月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_6" href="http://www.cnblogs.com/sincoolvip/archive/2017/09.html">2017年9月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_7" href="http://www.cnblogs.com/sincoolvip/archive/2017/08.html">2017年8月 (11)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_8" href="http://www.cnblogs.com/sincoolvip/archive/2017/07.html">2017年7月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_9" href="http://www.cnblogs.com/sincoolvip/archive/2017/06.html">2017年6月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_10" href="http://www.cnblogs.com/sincoolvip/archive/2017/05.html">2017年5月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_11" href="http://www.cnblogs.com/sincoolvip/archive/2017/04.html">2017年4月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_12" href="http://www.cnblogs.com/sincoolvip/archive/2017/03.html">2017年3月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_13" href="http://www.cnblogs.com/sincoolvip/archive/2017/02.html">2017年2月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_14" href="http://www.cnblogs.com/sincoolvip/archive/2017/01.html">2017年1月 (9)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_15" href="http://www.cnblogs.com/sincoolvip/archive/2016/12.html">2016年12月 (5)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_16" href="http://www.cnblogs.com/sincoolvip/archive/2016/11.html">2016年11月 (16)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_17" href="http://www.cnblogs.com/sincoolvip/archive/2016/10.html">2016年10月 (14)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_18" href="http://www.cnblogs.com/sincoolvip/archive/2016/09.html">2016年9月 (22)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_19" href="http://www.cnblogs.com/sincoolvip/archive/2016/08.html">2016年8月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_20" href="http://www.cnblogs.com/sincoolvip/archive/2016/07.html">2016年7月 (9)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_21" href="http://www.cnblogs.com/sincoolvip/archive/2016/06.html">2016年6月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_22" href="http://www.cnblogs.com/sincoolvip/archive/2016/05.html">2016年5月 (14)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_23" href="http://www.cnblogs.com/sincoolvip/archive/2016/04.html">2016年4月 (13)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_24" href="http://www.cnblogs.com/sincoolvip/archive/2016/01.html">2016年1月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_25" href="http://www.cnblogs.com/sincoolvip/archive/2015/11.html">2015年11月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_26" href="http://www.cnblogs.com/sincoolvip/archive/2015/08.html">2015年8月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_27" href="http://www.cnblogs.com/sincoolvip/archive/2015/07.html">2015年7月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_28" href="http://www.cnblogs.com/sincoolvip/archive/2015/05.html">2015年5月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_29" href="http://www.cnblogs.com/sincoolvip/archive/2015/04.html">2015年4月 (4)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap">
+<div class="catListComment">
+<h3 class="catListTitle">最新评论</h3>
+
+	<div id="RecentCommentsBlock"><ul>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/sincoolvip/p/7491043.html#3892110">1. Re:selenium+java-查找页面中包含关键字的URL</a></li>
+        <li class="recent_comment_body">你好，为什么执行完之后是空的，logFile.txt？</li>
+        <li class="recent_comment_author">--广工吴彦祖</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/sincoolvip/p/5864845.html#3683436">2. Re:JSP+Servlet+javabean+mysql实现页面多条件模糊查询</a></li>
+        <li class="recent_comment_body">博主可以把dao接口和service接口的代码也放进来吗？谢谢</li>
+        <li class="recent_comment_author">--cinderella717</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/sincoolvip/p/4532743.html#3456727">3. Re:运行 appium 自带实例报错：unresolved import:webdriver</a></li>
+        <li class="recent_comment_body">请教一下，我装了client，可是还是报这个错误呢？</li>
+        <li class="recent_comment_author">--xhgd</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/sincoolvip/p/5449202.html#3452085">4. Re:经典冒泡排序-由低到高</a></li>
+        <li class="recent_comment_body">可以参考这个：<a href="" target="_blank"></a></li>
+        <li class="recent_comment_author">--java_du</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/sincoolvip/p/5449202.html#3452081">5. Re:经典冒泡排序-由低到高</a></li>
+        <li class="recent_comment_body">兄弟，你这个还可以优化。结束条件1：你冒泡排序的总次数是数组的长度减1。结束条件2：其实只要在一趟排序的过程中，没有数据位置发生交换就可以结束排序了。结束条件2 进行 排序的次数 小于等于 结束条件1......</li>
+        <li class="recent_comment_author">--java_du</li>
+</ul>
+</div>
+</div>
+</div></div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/sincoolvip/p/5855350.html">1. 请求servlet操作成功后，在JSP页面弹出提示框(21509)</a></li><li><a href="http://www.cnblogs.com/sincoolvip/p/5910751.html">2. oracle建表并设置ID为自动增长(11694)</a></li><li><a href="http://www.cnblogs.com/sincoolvip/p/5967010.html">3. python模块xlrd安装-处理excel文件必须(11549)</a></li><li><a href="http://www.cnblogs.com/sincoolvip/p/5966696.html">4. pycharm安装python模块(9140)</a></li><li><a href="http://www.cnblogs.com/sincoolvip/p/5864845.html">5. JSP+Servlet+javabean+mysql实现页面多条件模糊查询(7662)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap">
+<div class="catListFeedback">
+<h3 class="catListTitle">评论排行榜</h3>
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="http://www.cnblogs.com/sincoolvip/p/5449202.html">1. 经典冒泡排序-由低到高(2)</a></li><li><a href="http://www.cnblogs.com/sincoolvip/p/5864845.html">2. JSP+Servlet+javabean+mysql实现页面多条件模糊查询(1)</a></li><li><a href="http://www.cnblogs.com/sincoolvip/p/7491043.html">3. selenium+java-查找页面中包含关键字的URL(1)</a></li><li><a href="http://www.cnblogs.com/sincoolvip/p/4532743.html">4. 运行 appium 自带实例报错：unresolved import:webdriver(1)</a></li></ul></div>
+</div>
+</div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2018 sincoolvip
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+</body></html>
